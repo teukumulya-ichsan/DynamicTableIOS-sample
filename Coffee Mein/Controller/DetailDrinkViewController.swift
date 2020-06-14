@@ -28,7 +28,7 @@ class DetailDrinkViewController: UIViewController {
             imageDrink.image = result.image
             nameDrink.text = result.name
             categoryDrink.text = result.category.rawValue.localizedCapitalized
-            priceDrink.text = "$. "+String(result.price)
+            priceDrink.text = String(format: "Rp. %.03f", result.price)
             descDrink.text = result.description
         }
     }

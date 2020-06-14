@@ -37,7 +37,7 @@ extension ViewController: UITableViewDataSource{
         
         let drink = drinks[indexPath.row]
         cell.imageDrink.image = drink.image
-        cell.priceDrink.text = "$ "+String(drink.price)
+        cell.priceDrink.text = String(format: "Rp. %.03f", drink.price)
         cell.nameDrink.text = drink.name
         
         
